@@ -1,0 +1,9 @@
+#!/bin/bash
+
+pyfile="$PYFILE" # Get python file name from environment variables
+
+python3 -m py_compile "$pyfile" #compile python file using py_compile module
+
+# Rename the compiled file to the required format (PYFILEc)
+compiled_file="${pyfile}c"
+mv "${pyfile}c" "$compiled_file"
