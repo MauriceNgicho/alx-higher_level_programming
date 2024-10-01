@@ -10,7 +10,7 @@ def safe_print_list_integers(my_list=[], x=0):
             # Skip the element if it's not an integer
             continue
         except IndexError:
-            # Break the loop if the index is out of range
-            break
+            # When index is out of range, raise the error
+            raise   # Re-raise the exception to stop the program
     print()
     return count  # Return the number of integers printed
