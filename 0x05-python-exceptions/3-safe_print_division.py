@@ -8,4 +8,4 @@ def safe_print_division(a, b):
     finally:
         # Print the result in the finally block
         print("Inside result: {}".format(result))
-    return result  # Return the result, which may be None if there was an exception
+    return result
