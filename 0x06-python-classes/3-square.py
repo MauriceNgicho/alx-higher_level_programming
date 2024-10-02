@@ -3,7 +3,8 @@
 
 
 class Square:
-    """Represents a square with a size attribute and method to calculate area"""
+    """Represents a square with a size attribute,
+    and method to calculate area"""
 
     def __init__(self, size=0):
         """Initializes the square with an optional size
