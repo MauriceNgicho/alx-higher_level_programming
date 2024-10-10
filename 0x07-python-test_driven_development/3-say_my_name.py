@@ -19,9 +19,14 @@ def say_my_name(first_name, last_name=""):
     """
 
 
-# Check if first_name is provided and is a string
-    if not isinstance(first_name, str) or first_name == "":
-        raise TypeError("first_name must be a string and cannot be empty")
+# Check if first_name is a string
+    if not isinstance(first_name, str):
+        raise TypeError("first_name must be a string")
+
+
+# Check if first_name is not empty
+    if (first_name == ""):
+        raise TypeError("fist_name cannot be empty")
 
 
 # check if last name is a string
