@@ -13,3 +13,18 @@ try:
     print(add_integer(None))
 except Exception as e:
     print(e)
+
+try:
+    print(add_integer(float('nan'), 2))
+except Exception as e:
+    print(e)
+
+try:
+    print(add_integer(float('inf'), 2))
+except Exception as e:
+    print(e)
+
+try:
+    print(add_integer(float('-inf'), 2))
+except Exception as e:
+    print(e)
