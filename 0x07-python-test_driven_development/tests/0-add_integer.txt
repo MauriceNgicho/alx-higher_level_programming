@@ -1,0 +1,27 @@
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer(1, 2)
+3
+
+Test that 100 + (-2) equals 98.
+>>> add_integer(100, -2)
+98
+
+Test that 2 + 98 equals 100 (only one argument provided).
+>>> add_integer(2)
+100
+
+Test that 100.3 + (-2) equals 98 (floating point numbers).
+>>> add_integer(100.3, -2)
+98
+
+Test that a string as the second argument raises a TypeError.
+>>> add_integer(4, "School")
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
+
+Test that None as the first argument raises a TypeError.
+>>> add_integer(None)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
