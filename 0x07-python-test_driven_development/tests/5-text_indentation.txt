@@ -1,0 +1,36 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation("Hello. How are you? I hope: everything is fine.")
+Hello.
+<BLANKLINE>
+How are you?
+<BLANKLINE>
+I hope:
+<BLANKLINE>
+everything is fine.
+
+>>> text_indentation("This is an example.   With multiple spaces?")
+This is an example.
+<BLANKLINE>
+With multiple spaces?
+<BLANKLINE>
+>>> text_indentation("")
+
+>>> text_indentation("..??::")
+.
+<BLANKLINE>
+.
+<BLANKLINE>
+?
+<BLANKLINE>
+?
+<BLANKLINE>
+:
+<BLANKLINE>
+:
+<BLANKLINE>
+>>> text_indentation("Text before .   and after?")
+Text before.
+<BLANKLINE>
+and after?
+<BLANKLINE>
