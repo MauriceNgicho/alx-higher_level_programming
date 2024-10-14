@@ -1,0 +1,34 @@
+# Create an instance of MyList and append integers
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.append(5)
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+
+# Check the print_sorted() method
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
+
+# Ensure original list is unchanged after print_sorted()
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+
+# Create another MyList and test with negative numbers
+>>> another_list = MyList()
+>>> another_list.append(-10)
+>>> another_list.append(0)
+>>> another_list.append(100)
+>>> another_list.append(-50)
+>>> print(another_list)
+[-10, 0, 100, -50]
+
+# Check the print_sorted() method with negative numbers
+>>> another_list.print_sorted()
+[-50, -10, 0, 100]
+
+# Ensure original list is unchanged
+>>> print(another_list)
+[-10, 0, 100, -50]
