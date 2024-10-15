@@ -8,10 +8,16 @@ and raised an error.
 
 
 class BaseGeometry:
-    """A class representing BaseGeometry with area and integer validation methods."""
+    """
+    A class representing BaseGeometry with
+    area and integer validation methods.
+    """
 
     def area(self):
-        """Raises an Exception with the message that area() is not implemented."""
+        """
+        Raises an Exception with the message that
+        area() is not implemented.
+        """
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
