@@ -23,9 +23,8 @@ def pascal_triangle(n):
         # Create the next row based on the previous row
         row = [1]  # Start with 1
         for j in range(1, i):
-            row.append(prev_row[j - 1] + prev_row[j])  # Sum of the two elements above
+            row.append(prev_row[j - 1] + prev_row[j])
         row.append(1)  # End with 1
         triangle.append(row)
 
     return triangle
-
