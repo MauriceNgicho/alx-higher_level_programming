@@ -71,10 +71,10 @@ class Rectangle(Base):
         """Prints the rectangle using '#'"""
         # Print new line for the y coordinate
         for _ in range(self.y):
-            print("$")
+            print("")
         # Print rectangle with a space for x
         for _ in range(self.height):
-            print("$" * self.x + "#" * self.width)
+            print("" * self.x + "#" * self.width)
 
     def __str__(self):
         """Override the __str__ method to return the Rectangle description"""
