@@ -4,6 +4,7 @@ Base class module
 """
 import json
 import os
+import csv
 
 
 class Base:
@@ -82,3 +83,42 @@ class Base:
                           for dictionary in list_dicts]
 
         return list_instances
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """Serializes a list of objects into a CSV file."""
+        filename = cls.__name__ + ".csv"
+        with open(filename, 'w', newline='') as csvfile:
+            writer = csv.writer(csvfile)
+            if cls.__name__ == 'Rectangle':
+                # For Rectangle: <id>,<width>,<height>,<x>,<y>
+                for obj in list_objs:
+                    writer.writerow([obj.id, obj.width, obj.height, ...
+                                     obj.x, obj.y])
+            elif cls.__name__ == 'Square':
+                # For Square: <id>,<size>,<x>,<y>
+                for obj in list_objs:
+                    writer.writerow([obj.id, obj.size, obj.x, obj.y])
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """Deserializes a CSV file into a list of objects."""
+        filename = cls.__name__ + ".csv"
+        if not os.path.exists(filename):
+            return []
+
+        instances = []
+        with open(filename, 'r', newline='') as csvfile:
+            reader = csv.reader(csvfile)
+            if cls.__name__ == 'Rectangle':
+                # For Rectangle: <id>,<width>,<height>,<x>,<y>
+                for row in reader:
+                    id_, width, height, x, y = map(int, row)
+                    instances.append(cls(width, height, x, y, id_))
+            elif cls.__name__ == 'Square':
+                # For Square: <id>,<size>,<x>,<y>
+                for row in reader:
+                    id_, size, x, y = map(int, row)
+                    instances.append(cls(size, x, y, id_))
+
+        return instances
