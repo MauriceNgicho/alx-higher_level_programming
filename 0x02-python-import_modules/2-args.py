@@ -5,7 +5,7 @@ if __name__ == "__main__":
 
     # Print number of arguments
     if args_count == 0:
-        print("0 arguments")
+        print("0 arguments.")
     elif args_count == 1:
         print("1 argument:")
     else:
