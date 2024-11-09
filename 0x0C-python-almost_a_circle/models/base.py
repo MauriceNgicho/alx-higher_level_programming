@@ -93,8 +93,11 @@ class Base:
             if cls.__name__ == 'Rectangle':
                 # For Rectangle: <id>,<width>,<height>,<x>,<y>
                 for obj in list_objs:
-                    writer.writerow([obj.id, obj.width, obj.height, ...
-                                     obj.x, obj.y])
+                    writer.writerow([
+                        obj.id, obj.width, obj.height,
+                        obj.x, obj.y
+                    ])
+
             elif cls.__name__ == 'Square':
                 # For Square: <id>,<size>,<x>,<y>
                 for obj in list_objs:
