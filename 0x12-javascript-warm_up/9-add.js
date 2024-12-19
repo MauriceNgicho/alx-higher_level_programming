@@ -2,8 +2,8 @@
 // A Node.js interpreter
 
 // An add function
-function add(a, b) {
-	return a + b;
+function add (a, b) {
+  return a + b;
 }
 
 // Perse the first and second args as integers
