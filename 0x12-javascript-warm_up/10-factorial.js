@@ -2,7 +2,7 @@
 // Shebang to specify the Node.js interpreter
 
 // Function to compute factorial recursively
-function factorial(n) {
+function factorial (n) {
   if (isNaN(n) || n <= 0) {
     return 1; // Base case: factorial of NaN or 0 is 1
   }
