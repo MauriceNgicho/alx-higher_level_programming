@@ -2,7 +2,7 @@
 // Shebang line to specify the Node.js interpreter for Unix-like environments
 
 // Access the command-line arguments using `process.argv`
-// The first two elements are: 
+// The first two elements are:
 //   process.argv[0] -> Path to the Node.js binary
 //   process.argv[1] -> Path to the script
 const args = process.argv.slice(2);
