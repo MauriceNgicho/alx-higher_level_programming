@@ -1,9 +1,9 @@
 #!/usr/bin/node
-const prevSquare = require('./5-square.js');
+const PrevSquare = require('./5-square');
 
-class Square extends prevSquare {
+class Square extends PrevSquare {
   charPrint (c) {
-    const char = c || 'x';
+    const char = c || 'X';
     for (let i = 0; i < this.height; i++) {
       console.log(char.repeat(this.width));
     }
