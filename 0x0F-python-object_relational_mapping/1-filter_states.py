@@ -26,7 +26,9 @@ if __name__ == "__main__":
     cursor = db.cursor()
 
     # Execute the SQL query to fetch all states ordered by id
-    cursor.execute("SELECT * FROM states ORDER BY id ASC;")
+    cursor.execute(
+            "SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY id ASC;"
+            )
 
     # Fetch all rows from the executed query
     rows = cursor.fetchall()
