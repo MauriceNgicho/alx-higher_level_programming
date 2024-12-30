@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Changes the name of a State object in the database hbtn_0e_6_usa
+Deletes all State objects with a name containing the letter 'a'
+from the database hbtn_0e_6_usa.
 """
 
 import sys
