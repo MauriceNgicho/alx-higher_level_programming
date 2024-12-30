@@ -7,6 +7,7 @@ from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import declarative_base
 from model_state import Base
 
+
 class City(Base):
     """
     City class that represents the cities table in the database.
