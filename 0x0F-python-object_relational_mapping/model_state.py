@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
 Defines a State class and links it to the states table in a MySQL database.
+The base code.
 """
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import declarative_base
