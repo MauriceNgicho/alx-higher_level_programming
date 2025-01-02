@@ -8,6 +8,7 @@ from sqlalchemy.orm import declarative_base
 # Create the declarative base
 Base = declarative_base()
 
+
 class State(Base):
     """
     State class that links to the MySQL table `states`.
