@@ -14,7 +14,7 @@ class State(Base):
     """
     State class that links to the MySQL table `states`.
     """
-    __tablename__ = 'states'i
+    __tablename__ = 'states'
 
     id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
     name = Column(String(128), nullable=False)
