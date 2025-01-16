@@ -62,6 +62,8 @@ class TestBase(unittest.TestCase):
         self.assertEqual(loaded_rects[0].width, 10)
         self.assertEqual(loaded_rects[1].width, 2)
 
+    def test_
+
 
 if __name__ == '__main__':
     unittest.main()
