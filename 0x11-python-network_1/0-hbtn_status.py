@@ -1,10 +1,12 @@
 #!/usr/bin/python3
+"""
+This module fetches a url and displays its response
+"""
 import urllib.request
 
-
-url = "https://alx-intranet.hbtn.io/status"
-
 if __name__ == "__main__":
+    url = "https://alx-intranet.hbtn.io/status"
+
     with urllib.request.urlopen(url) as response:
         body = response.read()
         print("Body response:")
